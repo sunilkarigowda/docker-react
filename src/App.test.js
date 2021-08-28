@@ -6,3 +6,4 @@ it('renders welcome message', () => {
   render(<App />);
   expect(screen.getByText('Learn React')).toBeInTheDocument();
 });
+
