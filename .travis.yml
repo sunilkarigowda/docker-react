@@ -2,8 +2,8 @@ language: generic
 sudo: required
 services:
  - docker
- before_install:
-  - docker build -t sunilkarigowda/docker-react -f Dockerfile.dev . 
+before_install:
+ - docker build -t sunilkarigowda/docker-react -f Dockerfile.dev . 
 
-  scripts:
-   - docker run -e CI=true sunilkarigowda/docker-react npm run test
+script:
+ - docker run -e CI=true sunilkarigowda/docker-react npm run test
